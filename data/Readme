@@ -1,1 +1,156 @@
+This is a data file that accompanies ``Repeated long-term population growth overshoots and recessions among hunter-gatherers." The raw data used in the paper are contained in 6 data.csv files and 2 data.csv files in the raw directory. This document describes the files and columns contained within.
+
+raw directory files: 
+
+FinalRCDTexas2.csv.: This file contains all radiocarob ages associated with archaeological remains collected from Central Texas and the Texas Coastal Plain. 
+
+Site Name--name of archaeological site	
+Trinomial--unique trinomial for each site	
+Assay No.--unique id for lab and each radiocarbon smaple	
+Provenience--provenience of dated material if known
+Feature Type--archaeological feature from which material was recovered
+Material--material dated	
+Taxa dated-species or genera of data material	
+Human--yes or no. yes indicates human remains dated	
+DatesUse--raw uncrorrected radiocarbon age	
+Error--standard deviation of raw radiocarbon age	
+Corrected/Raw	
+Corrected/Normalized 14C age	 
+Corrected/Normalized Age	
+Delta 13C	
+Delta 13C source	
+Raw/Measured Age	 
+Raw/Measured Age	
+AMS or Radiometric	
+Comments	
+Reference
+Region--Central Texas =CTx, Coastal Plain=TCP
+
+#############################
+
+SurfaceAreaRaw.csv: This file contains the raw radiocarbon ages associated with features and featureinformation, including length, width, rock weight, rock number etc. 
+
+Site--Archaeological site name
+Type--type of FCR feature
+AMS--Denots yes for organic remains associated with the feature radiocarbon dated with AMS technique
+RCYBP--Raw radiocarbon age of organic remain associated with a feature
+Error--Stadard error of the radiocarbon age estimate	
+EarthOven--yes if the report authors identified the feature as an earth oven	
+Reference--Author and date of the report from which the information was obtained
+Feature--number of name give to the feature at a site	
+dimension1m--Surface length in meters
+dimension2m--Surfacewidth in meters
+Thickness--depth of the feature	
+SurfaceArea--surface area in square meters	
+RockNumber--number of FCR identifed during excavation	
+RockWeight--Kgs of fire-cracked rock excavated from a feature	
+MacroEdiblePlantRemains--edible plant remains recovered from a feature	
+ExVolMeters3--Cubic meters of a feature excavated, if not fully excavated
+RockCount/Vol--rock count per cubic meter	
+RockWeight/Vol--rock weight per cubic meter	
+Notes--notes
+
+
+###########################################
+
+CTexIsotopeSubmit.csv: This file contains information on the stable isotopes of individuals buried in Central Texas. 
+
+Site--Archaeological site name
+BurialNumber--Provenience of individuals at a site	
+DeltaC13Car--delta 13C apatitive values	
+DeltaC13Col--delata 13C collagen values	
+DeltaN--delata 15N collagen values	
+C_N--collagen to nitrogen ratio
+MidDate--median date of radiocarbon age on an individual or the median date of associated component for individuals	
+MidDate2--reciprocal of above	
+CompID1--Logistic growth component ID identified in the paper
+CompID2--Expansion, Intensification and Recession Phase ID variable	
+WilcoxID--ID for running Wilcox test	
+PhaseComp--Expansion, Intensification and Recession Phase ID variable	
+PhaseComp--Same as above for isolating Intensification Phases
+PlusSigma	
+MinusSigma	
+Source	
+
+
+
+SurfaceMeansFinal.csv: This file documents the surface area and mean raw radiocarbon ages and error of burned rock features.
+
+Site--Archaeological site by tinomial
+Feature--feature documented at the site	
+n-number of associated radiocarbon ages	
+RCYBP--mean raw radiocaron age BP	
+Error mean standard deviation of ages	
+MedCal--median calibrated radiocarbon age	
+SurfaceArea--surface area of feature	
+RockNumber--number of rocks recored in an excavated feature	
+RockWeight--weight of roack recored (kg)	
+CompID	-Logistic growth component ID identified in the paper
+SurfaceClust--designation of big (2) and small (1) features
+CultHist--Cultural historic Periods. B- Early Middle Archaic (8,400 to 5,700 Cal BP), C-Late Middle Archaic (5,699 to 4,200cal BP), D-Transitional Middle to Late Archaic (4,199 to 3,700 cal BP), E- Early Late Archaic (3,699 to 2,100 cal BP), F- Late early Archaic (2,099 to 1,300 Cal BP), G- Late Prehistoric I (1,299 to 700 cal BP), H- Late Prehistoric II (699 to 500 cal BP) and Transitional Prehistoric/Historic (499 to 300 cal BP).
+
+
+CTxPhase1Confit.csv: SPD, confidence envelope of logistic component 1 of population growth along with FCR feature SPD and mean surface area.
+calBP--Year cal BP	
+PrDens--Summed probability density	
+lo--Predicted Summed probability of the 95th percentile fit logistic model	
+hi--Predicted Summed probability of the 95th percentile fit logistic model	
+LogisticFit--Mean of the fit logistic model	
+PhaseID---Expansion, Intensification and Recession Phase ID variable	
+CompID--Logistic growth component ID identified in the paper	
+BRMspd--Summed probability of radiocarbon ages associated with suspected earth ovens
+MeanFCRArea--Mean surface area of FCR features in a given PhaseID
+
+
+CTxPhase2ConfitLogfit.csv: SPD, confidence envelope of logistic component 1 of population growth along with FCR feature SPD and mean surface area.
+calBP--Year cal BP	
+PrDens--Summed probability density	
+lo--Predicted Summed probability of the 95th percentile fit logistic model	
+hi--Predicted Summed probability of the 95th percentile fit logistic model	
+LogFit2--Mean of the fit logistic model	
+PhaseID---Expansion, Intensification and Recession Phase ID variable	
+CompID--Logistic growth component ID identified in the paper	
+BRMspd--Summed probability of radiocarbon ages associated with suspected earth ovens
+MeanFCRArea--Mean surface area of FCR features in a given PhaseID
+
+CTxPhase3ConfitLogfit.csv: SPD, confidence envelope of logistic component 1 of population growth along with FCR feature SPD and mean surface area.
+calBP--Year cal BP	
+PrDens--Summed probability density	
+lo--Predicted Summed probability of the 95th percentile fit logistic model	
+hi--Predicted Summed probability of the 95th percentile fit logistic model	
+LogFit3--Mean of the fit logistic model	
+PhaseID---Expansion, Intensification and Recession Phase ID variable	
+CompID--Logistic growth component ID identified in the paper	
+BRMspd--Summed probability of radiocarbon ages associated with suspected earth ovens
+MeanFCRArea--Mean surface area of FCR features in a given PhaseID
+
+CTxThreePhaseCompined.csv: SPD, confidence envelope of logistic component 1 of population growth along with FCR feature SPD and mean surface area.
+calBP--Year cal BP	
+PrDens--Summed probability density	
+lo--Predicted Summed probability of the 95th percentile fit logistic model	
+hi--Predicted Summed probability of the 95th percentile fit logistic model	
+LogFit3--Mean of the fit logistic model	
+PhaseID---Expansion, Intensification and Recession Phase ID variable	
+CompID--Logistic growth component ID identified in the paper	
+BRMspd--Summed probability of radiocarbon ages associated with suspected earth ovens
+MeanFCRArea--Mean surface area of FCR features in a given PhaseID
+
+SPD50.csv: SPD, confidence envelope of logistic component 1 of population growth along with FCR feature SPD and mean surface area. These data are combined with modeled climate data from paleoview
+calBP--Year cal BP	
+PrDens--Summed probability density	
+lo--Predicted Summed probability of the 95th percentile fit logistic model	
+hi--Predicted Summed probability of the 95th percentile fit logistic model	
+LogFit--Mean of the fit logistic model	
+PhaseID---Expansion, Intensification and Recession Phase ID variable	
+CompID--Logistic growth component ID identified in the paper	
+CRR--Modeled mean annual rainfall for a 50 year interval	
+MAT--Modeled mean annual temperature in degrees celcius for a 50 year interval	
+NPP--Modeled NPP estimates for a given 50 year interval
+
+
+
+
+
+
+
 
