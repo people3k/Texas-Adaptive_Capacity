@@ -1,2 +1,2 @@
 # Texas-Adaptive_Capacity
-Data and code for Freeman et al. 2023 Holocence Revision
+Data and code for Freeman et al. 2023 preprint and Holocence submission
